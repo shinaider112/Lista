@@ -16,16 +16,23 @@ package lista;
 
 import java.util.Scanner;
 
-public class Kelvin {
+public class DoisValores {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		double celsius;
+		int num1, num2;
 		
-		System.out.println("Digite a temperatura em celsius: ");
-		celsius = s.nextInt();
+		System.out.println("Digite o primeiro valor: ");
+		num1 = s.nextInt();
 		
-		System.out.println("A temperatura em kelvin e: " +  (celsius +  273.15));
+		System.out.println("Digite o segundo valor: ");
+		num2 = s.nextInt();
+		
+		if(num1 > num2){
+			System.out.println(num1 - num2);
+		}else{
+			System.out.println(num2 - num1);
+		}
 
 	}
 
